@@ -1,0 +1,64 @@
+<% var total = data.json.word.length; %>
+<% var arr_read = [];
+var arr_number = [];
+var k=0;
+var h=0;
+data.json.read.forEach(function (read) {
+    read.forEach(function (re) {
+        arr_read[k] = re;
+        k++;
+    })
+});
+data.json.number.forEach(function (number) {
+    number.forEach(function (nu) {
+        arr_number[h] = nu;
+        h++;
+    })
+});
+arr_read = jp.shuffle_arr(arr_read);
+arr_number = jp.shuffle_arr(arr_number);
+
+%>
+<div class="mina_type exercise ex1" type="ex1">
+    <div class="homework" ex="ex1">
+        <p class="title"><%= data.json.title %></p>
+        <div class="ans_choose" style="margin-bottom: 20px;">
+            <%arr_read.forEach(function (re) { %>
+                <a class="label label-success label_txt_click"><%=re%></a>
+            <% })%>
+            <%arr_number.forEach(function (nu) { %>
+                <a class="label label-success label_txt_click"><%=nu%></a>
+            <% })%>
+
+        </div>
+        <div class="homework_content">
+            <table class="ex1_tb">
+                <tbody>
+                <tr>
+                    <% data.json.col.forEach(function (col) { %>
+                    <th><%= col %></th>
+                    <% }) %>
+                </tr>
+                <% for (var i = 0;i < total;i++) { %>
+                <tr>
+                    <td><span class="ex1_word"><%= data.json.word[i] %></span></td>
+
+                    <td><input type="text" class="ex1_read ex1_input_text" placeholder="?"><span
+                                class="ex_true_false glyphicon"></span></td>
+                    <td><input type="text" class="ex1_number ex1_input_text" placeholder="?"><span
+                                class="ex_true_false glyphicon"></span></td>
+                </tr>
+                <% } %>
+                </tbody>
+            </table>
+        </div>
+        <div class="homework_notification"></div>
+        <div class="jptest_control text-center">
+            <button class="jptest_control_1 btn btn-primary" onclick="ex1_check(this)">NỘP BÀI</button>
+        </div>
+        <input type="hidden" id="ex1_read_res"
+               value="YTo5OntpOjA7YToxOntpOjA7czo2OiLjgYTjgaEiO31pOjE7YToxOntpOjA7czozOiLjgasiO31pOjI7YToxOntpOjA7czo2OiLjgZXjgpMiO31pOjM7YToyOntpOjA7czo2OiLjgojjgpMiO2k6MTtzOjM6IuOBlyI7fWk6NDthOjE6e2k6MDtzOjM6IuOBlCI7fWk6NTthOjE6e2k6MDtzOjY6IuOCjeOBjyI7fWk6NjthOjI6e2k6MDtzOjY6IuOBl+OBoSI7aToxO3M6Njoi44Gq44GqIjt9aTo3O2E6MTp7aTowO3M6Njoi44Gv44GhIjt9aTo4O2E6Mjp7aTowO3M6OToi44GN44KF44GGIjtpOjE7czozOiLjgY8iO319">
+        <input type="hidden" id="ex1_number_res"
+               value="YTo5OntpOjA7YToxOntpOjA7czoxOiIxIjt9aToxO2E6MTp7aTowO3M6MToiMiI7fWk6MjthOjE6e2k6MDtzOjE6IjMiO31pOjM7YToxOntpOjA7czoxOiI0Ijt9aTo0O2E6MTp7aTowO3M6MToiNSI7fWk6NTthOjE6e2k6MDtzOjE6IjYiO31pOjY7YToxOntpOjA7czoxOiI3Ijt9aTo3O2E6MTp7aTowO3M6MToiOCI7fWk6ODthOjE6e2k6MDtzOjE6IjkiO319">
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<%var arr_words = jp.shuffle_arr(data.json.word);%>
+
+<div class="mina_type exercise ex2" type="ex2">
+   <div class="homework" ex="ex2">
+
+        <p class="title">Click vào từ bạn chọn sau đó click vào ô trống sao cho đúng.</p>
+
+        <div class="homework_content">
+            <div class="ex2_click_area">
+                <%var i= 0;%>
+                <%arr_words.forEach(function (w) {%>
+                <span id="ex2_click_<%=i++%>" onclick="ex2_click(this)" class="ex2_click" tem_id="0"><%-w%></span>
+
+                <%})%>
+            </div>
+            <div class="ex2_content">
+                <%var j=1;%>
+                <%data.json.read.forEach(function (r) {%>
+                <div class="item">
+                    <span class="number"><%=j++%></span>
+                    <span class="ex2_word"><%=r%></span>
+                    <span class="ex2_fill" onclick="ex2_fill(this)" id="ex2_fill_<%=j%>" tem_id="0">?</span>
+                    <span class="ex_true_false"></span>
+
+                    <div class="clear_both"></div>
+                </div>
+
+                <%})%>
+
+                <div class="clear_both"></div>
+            </div>
+        </div>
+
+
+        <div class="homework_notification"></div>
+        <div class="jptest_control text-center">
+            <button class="jptest_control_1 btn btn-primary" onclick="ex2_check(this)">NỘP BÀI</button>
+        </div>
+    </div>
+
+</div>

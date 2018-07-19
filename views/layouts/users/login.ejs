@@ -1,0 +1,103 @@
+<%- include ../header.ejs %>
+<div class="page_2s">
+    <!-- Navbar -->
+    <nav class="menuloadController">
+    </nav>
+    <!-- end nav -->
+
+
+    <!-- Breadcrumbs -->
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul>
+                        <li class="home"><a title="Trang chủ" href="/">Trang chủ</a><span>&raquo;</span>
+                        </li>
+                        <li><strong>Đăng nhập | Đăng ký</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumbs End -->
+
+    <!-- Main Container -->
+    <section class="main-container col1-layout">
+        <div class="main container">
+
+
+            <div class="page-content">
+
+                <div class="account-login">
+                    <%if(register===1){%>
+                    <h4 class="alert alert-success">Đăng ký thành công! Đăng nhập để trải nghiệm những bài học thú vị.</h4>
+                    <%}%>
+                    <%if(register===0){%>
+                    <h4 class="alert alert-warning">Đăng ký gặp lỗi! Mời bạn thử lại.</h4>
+                    <%}%>
+                    <%if(login===1){%>
+                    <h4 class="alert alert-success">Đăng nhập công!</h4>
+                    <%}%>
+                    <%if(login===0){%>
+                    <h4 class="alert alert-warning">Email hoặc mật khẩu không đúng! Mời bạn thử lại.</h4>
+                    <%}%>
+
+                    <div class="box-authentication">
+                        <h4>Login</h4>
+                        <p class="before-login-text">Welcome back! Sign in to your account</p>
+                        <label for="email_login">Email address<span class="required">*</span></label>
+                        <input id="email_login" type="text" class="form-control">
+                        <label for="password_login">Password<span class="required">*</span></label>
+                        <input id="password_login" type="password" class="form-control">
+                        <p class="forgot-pass"><a href="#">Lost your password?</a></p>
+                        <button class="button"><i class="fa fa-lock"></i>&nbsp; <span>Login</span></button>
+                        <label class="inline" for="rememberme">
+                            <input type="checkbox" value="forever" id="rememberme" name="rememberme"> Remember me
+                        </label>Create your very own acco
+                    </div>
+                    <div class="box-authentication jp2s">
+                        <form method="post" name="frmRegister" id="frmRegister" action="/users/register">
+                            <h4>Đăng ký tài khoản</h4>
+                            <p>(*) là các trường bắt buộc</p>
+                            <label for="user_email">Địa chỉ email<span class="required">*</span></label>
+                            <input id="user_email" name="user_email" type="text" class="form-control">
+                            <span class="clearfix"></span>
+                            <label for="user_name">Họ tên<span class="required">*</span></label>
+                            <input id="user_name" name="user_name" type="text" class="form-control">
+                            <span class="clearfix"></span>
+
+                            <label for="user_mobile">Số điện thoại<span class="required">*</span></label>
+                            <input id="user_mobile" name="user_mobile" type="text" class="form-control">
+                            <span class="clearfix"></span>
+
+                            <label for="user_pass">Mật khẩu<span class="required">*</span></label>
+                            <input id="user_pass" name="user_pass" type="password" class="form-control">
+                            <span class="clearfix"></span>
+
+                            <label for="user_repass">Nhập lại mật khẩu<span class="required">*</span></label>
+                            <input id="user_repass" name="user_repass" type="password" class="form-control">
+                            <span class="clearfix"></span>
+
+                            <button class="button"><i class="fa fa-user"></i>&nbsp; <span>Đăng ký</span></button>
+                        </form>
+                        <div class="register-benefits">
+                            <h5>Sign up today and you will be able to :</h5>
+                            <ul>
+                                <li>Speed your way through checkout</li>
+                                <li>Track your orders easily</li>
+                                <li>Keep a record of all your purchases</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Main Container End -->
+
+<%- include ../footer.ejs %>

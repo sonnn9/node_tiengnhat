@@ -1,0 +1,45 @@
+<div class="homework jp2s_amhan" ex="lt4">
+    <div class="table-responsive">
+        <h3>Bảng Âm Hán</h3>
+        <div class="alert alert-warning">
+            <p>Click vào các chữ hán để xem cách viết</p>
+        </div>
+
+        <table class="table table-hover">
+            <%var i=1%>
+            <% data.json.hantu.forEach(function(item){ %>
+            <tr>
+                <td><%=i++%></td>
+                <td class="fz2s_35"><%=item.hantu%></td>
+                <td><%=item.amhan%></td>
+                <td><%=item.nghia%></td>
+            </tr>
+
+            <%})%>
+        </table>
+        <div class="h10"></div>
+
+
+        <h3>Bảng từ ghép</h3>
+        <table class="table table-hover">
+            <%var i=1%>
+
+            <% data.json.tughep.forEach(function (item) {%>
+
+
+            <tr>
+                <td><%=i++%></td>
+                <td class="fz2s_35"><%=item.tughep%></td>
+                <td><%=item.amhan%></td>
+                <td><%=item.cachdoc%></td>
+                <td><%=item.nghia%></td>
+            </tr>
+
+            <%})%>
+
+
+        </table>
+
+    </div>
+
+</div>

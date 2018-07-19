@@ -1,0 +1,14 @@
+<%var lists = data.json.words;%>
+<%var stt= 1%>
+<%lists.forEach(function (item) {%>
+<% var i = item.jp.length;%>
+<h4><%=stt++%></h4>
+<table class="table table-hover">
+        <%for (var j=0;j<i;j++){ %>
+        <tr>
+       <td><%-item.jp[j];%><span><%-item.audio[j];%></span><br><small><%-item.vn[j];%></small></td>
+        </tr>
+    <%}%>
+</table>
+
+<%})%>

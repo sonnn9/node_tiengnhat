@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-3 text-center">
+        <br>
+        <br>
+        <br>
+        <img width="80%" src="/assets/images/courses/kanjilookandlean.jpg">
+    </div>
+    <div class="col-xs-12 col-sm-9">
+
+        <ul class="blog-posts">
+            <% data.forEach(function(item){ %>
+
+            <li class="post-item">
+                <article class="entry">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h3 class="entry-title" ><a href="<%=data.path%>/?pid=<%=item.ID%>" style="white-space: normal;"><%=item.post_title%></a></h3>
+                            <div class="entry-meta-data"> <span class="author"> <i class="fa fa-user"></i>&nbsp;<a href="#">Vip</a></span> <span class="cat"> <i class="fa fa-folder"></i>&nbsp; <a href="#">News, </a> <a href="#">Promotions</a> </span> <span class="comment-count"> <i class="fa fa-comment"></i>&nbsp; 3 </span> </div>
+                            <div class="rating" style="cursor: pointer;"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i class="fa fa-star-o"></i>&nbsp; <span>(5 votes)</span></div>
+                            <div class="entry-excerpt"><%=item.description%></div>
+                            <a href="#" class="button read-more">Vào học&nbsp; <i class="fa fa-angle-double-right"></i></a> </div>
+                    </div>
+                </article>
+            </li>
+            <% }); %>
+
+        </ul>
+    </div>
+
+</div>

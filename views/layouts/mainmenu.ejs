@@ -1,0 +1,70 @@
+<% var mainmenu = dataMenu.mainmenu %>
+<% var coursemenu = dataMenu.coursemenu %>
+<% var mobilemenu = dataMenu.mobilemenu %>
+
+<div id="mobile-menu" style="top: 50px;">
+    <ul>
+        <% mobilemenu[0].forEach(function(mobile){ %>
+        <li><a href="<%= mobile.url; %>"><span> <%= mobile.post_title; %></span></a>
+            <% if (mobilemenu[mobile.ID]) { %>
+                    <ul>
+                        <% mobilemenu[mobile.ID].forEach(function(sub1){ %>
+                        <li><a href="<%= sub1.url; %>"><span><%= sub1.post_title; %></span></a></li>
+                        <% }); %>
+                    </ul>
+            <% } %>
+        </li>
+        <% }); %>
+    </ul>
+</div>
+<!-- end mobile menu -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-4">
+            <div class="mm-toggle-wrap">
+                <div class="mm-toggle"><i class="fa fa-align-justify"></i></div>
+                <span class="mm-label" onclick="megaMenuClick();">Danh mục</span></div>
+            <div class="mega-container visible-lg visible-md visible-sm">
+                <div class="navleft-container">
+                    <div class="mega-menu-title" onclick="megaMenuClick();">
+                        <h3>Khoá Học</h3>
+                    </div>
+                    <div class="mega-menu-category" style="display: none;">
+                        <ul class="nav">
+                            <% coursemenu[0].forEach(function(course){ %>
+                            <li class="<% if (!coursemenu[course.ID]) { %>nosub<% } %>"><a href="<%= course.url; %>"><i
+                                            class="icon fa fa-book fa-fw"></i> <%= course.post_title; %></a>
+                                <% if (coursemenu[course.ID]) { %>
+                                <div class="wrap-popup column1">
+                                    <div class="popup">
+                                        <ul class="nav">
+                                            <% coursemenu[course.ID].forEach(function(sub){ %>
+                                            <li><a href="<%= sub.url; %>"><span><%= sub.post_title; %></span></a></li>
+                                            <% }); %>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <% } %>
+                            </li>
+                            <% }); %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 col-sm-8">
+            <div class="mtmegamenu">
+                <ul>
+                    <% mainmenu[0].forEach(function(main){ %>
+                    <li class="mt-root">
+                        <div class="mt-root-item"><a href="<%= main.url; %>">
+                                <div class="title title_font"><span class="title-text"><%= main.post_title; %></span>
+                                </div>
+                            </a></div>
+                    </li>
+                    <% }); %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

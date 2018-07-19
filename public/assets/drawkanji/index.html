@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Draw me a kanji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="flat-ui/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="flat-ui/css/flat-ui.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-30115117-3', 'drawmeakanji.com');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+
+<div id="main" class="container">
+    <header>
+        <h1 class="emboss mask">Draw me a kanji</h1>
+        <div class="logo emboss mask">漢字</div>
+    </header>
+    <div class="row wrap-draw mask">
+        <div id="draw"></div>
+        <div id="adraw"></div>
+        <div id="slider" class="ui-slider"></div>
+        <button id="rewind" class="btn btn-xs btn-danger"><span class="fui-arrow-left"></span></button>
+        <button id="play" class="btn btn-xs btn-danger"><span class="fui-play"></span></button>
+        <button id="pause" class="btn btn-xs btn-danger"><span class="fui-pause"></span></button>
+        <button id="forward" class="btn btn-xs btn-danger"><span class="fui-arrow-right"></span></button>
+    </div>
+    <div class="row wrap-form">
+        <div class="col-md-10 col-xs-8">
+            <input id="mytext" type="text" class="form-control input-lg mask" placeholder="Enter a word" />
+        </div>
+        <div class="col-md-2  col-xs-4">
+            <button id="mybtn" class="btn btn-lg btn-danger mask"><span class="fui-arrow-right"></span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-xs-12">
+            <p id="sample-words" class="text-center"><small>Try with these sample words: <span class="btn btn-xs btn-danger mask">日本</span> <span class="btn btn-xs btn-danger mask">東京</span> <span class="btn btn-xs btn-danger mask">漢字を書いて</span></small></p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="flat-ui/js/jquery-2.0.3.min.js"></script>
+<script src="flat-ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="flat-ui/js/bootstrap.min.js"></script>
+<script src="flat-ui/js/jquery.placeholder.js"></script>
+<script src="js/script.min.js"></script>
+</body>
+</html>

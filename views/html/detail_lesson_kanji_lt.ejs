@@ -1,0 +1,62 @@
+<div class="kj_look_learn" style="max-width: 680px">
+    <div class="tb_list_kanji">
+        <%var j=0%>
+        <% data.json.forEach(function (lec) { %>
+        <a class="item" href="#item_<%=j++%>">
+            <div class="number"><%=j++%></div>
+            <%= lec.word %>            </a>
+        <% }) %>
+
+    </div>
+    <%var j=0%>
+
+    <% data.json.forEach(function (lec) { %>
+
+    <div class="kj_item page-scroll" id="item_<%=j++%>">
+        <div class="kj_line">
+            <div class="kj_left">
+                <div class="kj_number"><%=j++%></div>
+                <div class="word">
+                    <center>
+                        <img width="50%"
+                             src="http://tiengnhat2s.com/folder/kanji/look_and_learn/lecture/gif/<%= lec.img3 %>">
+                    </center>
+                </div>
+                <div class="mean"><%= lec.mean %></div>
+            </div>
+            <div class="kj_right">
+                <img class="kj_img_c" src="http://tiengnhat2s.com/folder/kanji/look_and_learn/lecture/<%= lec.img1 %>">
+                <div class="kj_explain">
+                    <div class="jp"><%- lec.ex.jp %></div>
+                    <div class="vn"><%- lec.ex.en %></div>
+                </div>
+            </div>
+            <div class="clear_both"></div>
+        </div>
+        <div class="kj_line">
+            <div class="kj_left">
+                <% lec.read.forEach(function (read) { %>
+                <div class="read"><%= read %></div>
+                <% }) %>
+
+            </div>
+            <div class="kj_right">
+                <% lec.tu_ghep.forEach(function (tughep) { %>
+
+                <div class="ex">
+                    <div class="jp"><%= tughep.jp %></div>
+                    <div class="vn"><%= tughep.en %></div>
+                </div>
+                <% }) %>
+            </div>
+            <div class="clear_both"></div>
+        </div>
+        <div class="kj_line">
+            <img class="kj_img_m" src="http://tiengnhat2s.com/folder/kanji/look_and_learn/lecture/<%= lec.img2 %>">
+        </div>
+    </div>
+    <% }) %>
+
+    <div class="clear_both"></div>
+
+</div>

@@ -1,0 +1,29 @@
+<div class="container-fluid kanji_tapviet">
+    <p class="alert alert-warning">Hãy điền từ kanji vào ô trống, và xem cách viết. Bạn sẽ có một cách học kanji hiệu quả.</p>
+    <form class="form-inline">
+        <div class="form-group">
+            <label>Nhập từ / kanji</label>
+            <input type="text" id="kanji_text_input" class="form-control" placeholder="Nhập từ hoặc chữ kanji">
+        </div>
+        <button type="button" class="btn btn-success" onclick="show_kanji_search()">Xem cách viết</button>
+    </form>
+    <div class="h20"></div>
+    <div class="kj_strokes">
+        <% data.forEach(function (strokes){ %>
+            <div class="itm_strocke">
+            <h2><%=strokes.Stroke%></h2>
+            <div class="itm_data">
+                <%strokes.data.forEach(function (stroke){ %>
+                <p class="item_kanji"><%=stroke%></p>
+                <%})%>
+                <div class="clearboth"></div>
+            </div>
+        </div>
+        <%})%>
+    </div>
+
+</div>
+
+
+
+

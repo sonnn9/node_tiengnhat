@@ -1,0 +1,30 @@
+<%var col = data.json.col%>
+<%var word = data.json.word%>
+<%var read = data.json.read%>
+<%var translate = data.json.translate%>
+<%var ex = data.json.ex%>
+<%var ex_translate = data.json.ex_translate%>
+<%var total  = data.json.word.length%>
+<div class="container-fluid">
+    <h3><%=data.json.title;%></h3>
+    <table class="table table-hover table-bordered table-responsive">
+        <thead>
+            <%col.forEach(function (c) {%>
+              <th><h3><%=c%></h3></th>
+            <%})%>
+        </thead>
+        <%for (var i =0;i<total;i++){ %>
+        <tr>
+            <td><b class="fz2s_35"><%-word[i]%></b></td>
+            <td><%-read[i]%></td>
+            <td>
+                <%-translate[i]%><br>
+                <%if(ex.length > 0){%>
+                <span><b>câu mẫu:</b> <%-ex[i]%></span><br>
+                <span><b>nghĩa :</b> <%-ex_translate[i]%></span>
+                <%}%>
+            </td>
+        </tr>
+        <%}%>
+    </table>
+</div>

@@ -1,0 +1,893 @@
+
+@media screen and (min-width: 768px) {
+    #main-menu {
+        position: relative;
+        width: auto;
+        z-index: 9999;
+    }
+    #main-menu ul {
+        width: 12em;
+    }
+}
+.sm-blue a, .sm-blue a:hover, .sm-blue a:focus, .sm-blue a:active {
+    font-family: "Roboto Condensed Regular" !important;
+    font-weight: 500 !important;
+}
+.a_link_vip {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.a_link_vip:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    color: inherit !important;
+}
+.jp_slide {
+    background: #3092c0 linear-gradient(to bottom, #3b9fce, #2b82ac) repeat scroll 0 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    margin-top: 5px;
+}
+.jp_slide img {
+    border-radius: 3px;
+}
+.jp_3box {
+    background: #efefef none repeat scroll 0 0;
+    font-family: OPENSANS-REGULAR;
+    margin-top: 15px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.jp_3box .jp_3box_item {
+    padding: 0 15px;
+}
+.jp_3box .jp_3box_item .title {
+    color: #333;
+    font-size: 17px;
+}
+.jp_3box .col-md-4:nth-child(2) .jp_3box_item {
+    border-left: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+}
+.jp_3box .jp_3box_item .title span {
+    text-decoration: underline;
+}
+.jp_3box_ul {
+    float: left;
+    margin: 10px 0 0;
+    padding: 0;
+}
+.jp_3box_ul li {
+    float: left;
+    list-style: outside none none;
+    padding: 5px 0;
+    width: 100%;
+}
+.jp_3box_ul li b {
+    background: yellowgreen none repeat scroll 0 0;
+    border-radius: 20px;
+    color: white;
+    display: inline-block;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+}
+.jp_3box_ul li a {
+    display: inline-block;
+    float: left;
+    margin-left: 5px;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.jp2s_wrapper {
+    background: white none repeat scroll 0 0;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    max-width: 1100px;
+}
+.jp_box_content {
+    border-top: 2px solid red;
+    padding-bottom: 25px;
+    padding-top: 0;
+}
+.jp_main_content {
+    border-right: 1px solid #dcdcdc;
+    min-height: 500px;
+    padding-top: 20px;
+}
+.jp_right_col {
+    min-height: 500px;
+}
+.padding0x0 {
+    padding: 0 !important;
+}
+.jp_bangchucai {
+}
+.jp_bangchucai a {
+    display: block;
+    margin-bottom: 5px;
+}
+.jp_bangchucai a img {
+    max-width: 100%;
+}
+.jp_face_hoidap {
+}
+.jp_face_hoidap h3, .jp_kanji_flag h3 {
+    background: wheat none repeat scroll 0 0;
+    display: block;
+    font-family: OPENSANS-REGULAR;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+.jp_kanji_flag {
+    background: whitesmoke none repeat scroll 0 0;
+    font-family: "open sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-bottom: 10px;
+}
+.jp_kanji_flag .kanji_flag {
+    text-align: center;
+}
+.jp_kanji_flag .kanji_flag p {
+    color: tomato;
+    font-family: opensans-regular;
+    font-size: 80px;
+    text-align: center;
+}
+.jp_kanji_flag .kanji_flag span {
+}
+.jp_gt_item {
+    border: 1px solid #dcdcdc;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+.jp_gt_item img {
+    max-height: 150px;
+    max-width: 100%;
+}
+.jp_gt_item a {
+    background-image: url("../images/a_opacity.png");
+    background-repeat: repeat;
+    bottom: 0;
+    color: white;
+    display: block;
+    font-family: open sans;
+    font-size: 14px;
+    padding: 5px;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+}
+.jp_gt_item a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+.jp_list_lesson {
+}
+.jp_list_lesson h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.jp_list_lesson ul {
+    float: left;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 0;
+    min-width: 80%;
+}
+.jp_list_lesson ul li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.jp_list_lesson ul li a {
+    float: left;
+    font-family: OPENSANS-REGULAR;
+    font-size: 13px;
+    line-height: 25px;
+    width: 75%;
+}
+.jp_list_lesson ul li ul {
+    margin-left: 30px;
+    min-width: 30%;
+}
+.jp_list_lesson ul li ul li a {
+    display: block;
+    width: 100%;
+}
+.jp_list_lesson ul li p {
+    color: tomato;
+    float: right;
+    margin: 0;
+}
+.jp_list_lesson ul li p span {
+    font-size: 12px;
+}
+.jp_list_lesson ul li p span b {
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+}
+.jp_list_lesson ul li p i {
+    margin-right: 3px;
+}
+h3.jp_block_title {
+    background-image: url("../images/node-teaser-title-bg.png");
+    background-repeat: no-repeat;
+    background-size: 350px 50px;
+    border-radius: 3px 0 0 3px;
+    color: white;
+    font-family: OPENSANS-REGULAR;
+    font-size: 17px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    margin-top: 0;
+    padding: 10px 5px 10px 20px;
+}
+.btn_skill {
+    font-family: OPENSANS-REGULAR;
+    font-size: 15px !important;
+    font-weight: bold;
+    margin-left: 20px;
+    width: 90%;
+}
+.jp_skill_item {
+}
+.jp_skill_item a {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+.jp_skill_item a img {
+    border: 1px solid #dcdcdc;
+    height: 120px;
+    padding: 1px;
+    width: 100%;
+}
+.jp_skill_item a p {
+    font-family: open sans;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+.h_auto {
+    height: 300px !important;
+}
+.jp_actual .jp_skill_item {
+    height: 400px;
+}
+.jp_footer {
+    border-top: 2px solid red;
+    margin-top: 10px;
+}
+.jp_logo_footer {
+    padding: 30px 0;
+    text-align: center;
+}
+.jp_logo_footer img {
+    width: 90%;
+}
+.jp_scroll_top {
+    background-image: url("../images/scroll_top.png");
+    border-radius: 110px;
+    display: block;
+    height: 60px;
+    margin: 50px auto 0;
+    width: 60px;
+}
+.info_footer {
+}
+.info_footer h3 {
+    color: tomato;
+    font-family: open sans;
+    font-weight: 600;
+}
+.info_footer p {
+    color: steelblue;
+}
+.jp_list_lesson ul li.mina_show {
+    display: none;
+}
+.jp_list_lesson ul li.mina_show.show {
+    display: block;
+}
+.tb_1800 .jp {
+    font-size: 18px;
+    width: 45%;
+}
+.tb_1800 .vn {
+    width: 45%;
+}
+.tb_1800 {
+    width: 10%;
+}
+.jp_lt2 {
+}
+.jp_lt2 h3 {
+}
+.jp_lt2 p {
+    margin-left: 3%;
+}
+.jp_lt2 p.jp {
+}
+.jp_lt2 p.vn {
+}
+.jp_lt2_note {
+    margin-top: 50px;
+}
+.jp_lt2_note h3 {
+    text-align: center;
+}
+.jp_lt2_note p {
+}
+.jp_lt2_note p.text-danger {
+    font-size: 25px;
+}
+.jp_btn_show_all {
+    background: yellowgreen none repeat scroll 0 0;
+    border-radius: 5px;
+    color: white;
+    display: block;
+    font-family: OPENSANS-REGULAR;
+    margin-top: 10px;
+    padding: 3px;
+    text-align: center;
+    width: 50%;
+}
+.jp_btn_show_all:hover {
+    color: white;
+    text-decoration: underline;
+}
+.jp2s_breadcrumb {
+    padding: 10px;
+}
+.jp2s_breadcrumb ul {
+    background: transparent none repeat scroll 0 0;
+}
+.jp2s_breadcrumb ul li {
+}
+.jp2s_breadcrumb ul li a {
+    color: cornflowerblue;
+    font-family: OPENSANS-REGULAR;
+    font-size: 15px;
+}
+.jp2s_mina {
+}
+.jp2s_mina .jp2s_mina_item {
+    border-top: 1px solid #dcdcdc;
+    margin-bottom: 30px;
+    padding-top: 13px;
+    text-align: center;
+}
+.jp2s_mina .jp2s_mina_item img {
+    height: 130px;
+    width: 90%;
+}
+.jp2s_mina .jp2s_mina_item a {
+    color: teal;
+    display: block;
+    font-family: OPENSANS-REGULAR;
+    font-size: 13px;
+    margin-top: 8px;
+    min-height: 60px;
+    text-align: left;
+}
+.jp2s_mina .jp2s_mina_item p {
+    display: block;
+    margin-top: 10px;
+}
+.jp2s_mina .jp2s_mina_item p .glyphicon {
+    margin-right: 5px;
+}
+.jp2s_mina .jp2s_mina_item p span {
+    cursor: pointer;
+}
+.jp2s_kll {
+    padding: 0 3%;
+}
+.h3_title {
+    border-bottom: 1px solid #dcdcdc;
+    color: #333;
+    font-family: OPENSANS-REGULAR;
+    font-size: 25px;
+    margin: 20px auto 0;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    text-align: center;
+    width: 100%;
+}
+.jp2s_amhan {
+}
+.jp2s_amhan table tr td {
+    vertical-align: middle !important;
+}
+.fz2s_35 {
+    cursor: pointer;
+    font-family: jp5;
+    font-size: 35px;
+}
+.mgl20 {
+    margin-left: 20px !important;
+}
+div.messages {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media only screen and (max-device-width: 600px) {
+    .padding0x0 {
+        padding: 0 15px !important;
+    }
+}
+.somatome_content {
+}
+.somatome_content .somatome_img_title {
+    max-width: 70%;
+}
+.soma_item_box {
+}
+.soma_item_box .title {
+    color: #333 !important;
+    font-size: 25px !important;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.soma_item_word {
+}
+.soma_item_word .title_word {
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.soma_item_word .img_word {
+    max-width: 70%;
+}
+.soma_item_word table {
+}
+.soma_item_word table tr {
+}
+.soma_item_word table tr td {
+}
+.somatome_practice {
+}
+.somatome_prac_item {
+    margin-left: 20px;
+}
+.soma_test_item {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.soma_test_item ul {
+    margin-left: 20px;
+}
+.soma_test_item ul li {
+    list-style: outside none none;
+}
+.soma_test_item ul li p {
+    font-size: 15px;
+}
+.soma_test_item ul li p.question_check {
+    background-image: url("../images/n_radio.png");
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    cursor: pointer;
+    display: block;
+    line-height: 25px;
+    padding-left: 30px;
+}
+.soma_test_item ul li p.question_check.active {
+    background-image: url("../images/n_radio_active.png");
+}
+.soma_test_item ul li p span {
+}
+.soma_question .soma_check {
+    color: red;
+    display: inline-block;
+    height: 20px;
+    margin-right: 5px;
+    width: 20px;
+}
+.question_check .soma_show {
+    color: blue;
+    display: inline-block;
+    height: 20px;
+    margin-left: -60px;
+    margin-right: 40px;
+    width: 20px;
+}
+.somat_notification {
+    color: tomato;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.jp_ads {
+    display: block;
+}
+.jp_ads img {
+    width: 100%;
+}
+.jp_main_block {
+    padding-left: 20px;
+}
+.dethi {
+}
+.dethi .dethi_note {
+    font-size: 17px;
+    font-weight: bold;
+}
+.dethi .item_dethi {
+    margin-bottom: 30px;
+}
+.dethi .item_dethi .cau_hoi {
+    font-size: 15px;
+    line-height: 35px;
+    margin-left: 5%;
+}
+.dethi .item_dethi .cauhoi_number {
+    font-size: 15px;
+    font-weight: bold;
+}
+.dethi .item_dethi .cau_hoi.note {
+    margin-left: 0;
+}
+.dethi .item_dethi .dethi_traloi {
+    margin-left: 5%;
+}
+.dethi .item_dethi .dethi_traloi .traloi_item {
+    background-image: url("../images/n_radio.png");
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 17px;
+    min-width: 48%;
+    padding-left: 25px;
+}
+.dethi .item_dethi .dethi_traloi .traloi_item.active {
+    background-image: url("../images/n_radio_active.png");
+}
+.dethi .item_dethi .dethi_traloi .traloi_item:hover {
+    color: #0f192a;
+}
+.dethi .item_dethi .dethi_true_false {
+    margin-left: 5px;
+}
+.dethi .item_dethi .dethi_da {
+    color: red;
+    margin-left: 5px;
+}
+.dethi .dethi_noti {
+    color: steelblue;
+    font-size: 19px;
+}
+.dethi .para {
+    font-size: 16px;
+    line-height: 30px;
+    text-indent: 20px;
+}
+.dethi .mdt1 {
+    display: block;
+    margin-left: 74%;
+}
+.dethi .mdt2 {
+    display: block;
+    margin-left: 70%;
+}
+.dethi .mdt3 {
+    display: block;
+    margin-left: 10%;
+}
+.dethi .mdt4 {
+    display: block;
+    margin-left: 45%;
+}
+.dethi .para span {
+    text-indent: 0;
+}
+.jp_kanji_draw {
+    position: relative;
+}
+.jp_kanji_draw span {
+    color: sienna;
+    display: block;
+    font-size: 40px;
+    left: 0;
+    padding: 5px;
+    position: absolute;
+    top: 10%;
+}
+.ex_kanji_show {
+    border: 1px solid #dcdcdc;
+    margin: 5%;
+    position: relative;
+    text-align: center;
+}
+.ex_kanji_show .ex_kanji_show_item {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    margin: 40px auto;
+    width: 50%;
+}
+.ex_kanji_show .ex_kanji_show_item .face {
+    text-align: center;
+    width: 100%;
+}
+.ex_kanji_show .ex_kanji_show_item .face .ka_img {
+    text-align: center;
+}
+.ex_kanji_show .ex_kanji_show_item .face .ka_img img {
+    margin-top: 50px;
+    text-align: center;
+    width: 60%;
+}
+.ex_kanji_show .ex_kanji_show_item .face .ka_img_gif {
+}
+.ex_kanji_show .ex_kanji_show_item .face .ka_img_gif img {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 40%;
+}
+.ex_kanji_show .ex_kanji_show_item .back {
+    width: 100%;
+}
+.ex_kanji_show .ex_kanji_show_item .face .example {
+}
+.ex_kanji_show .ex_kanji_show_item .face .example .jp {
+    font-size: 17px;
+}
+.ex_kanji_show .ex_kanji_show_item .face .example .vn {
+}
+.ex_kanji_show .ex_kanji_show_item .back .read {
+    margin-top: 30px;
+}
+.ex_kanji_show .ex_kanji_show_item .back .read p {
+}
+.ex_kanji_show .ex_kanji_show_item .back .read p span {
+    font-size: 16px;
+    margin: 0 5px;
+}
+.ex_kanji_show .ex_kanji_show_item .back .read .jp {
+}
+.ex_kanji_show .ex_kanji_show_item .back .read .vn {
+}
+.ex_kanji_show .ex_kanji_show_item .back .tu_ghep {
+    margin-top: 30px;
+}
+.ex_kanji_show .ex_kanji_show_item .back .tu_ghep p {
+    display: inline-block;
+    padding: 0 20px;
+    text-align: left;
+    width: 100%;
+}
+.ex_kanji_show .ex_kanji_show_item .back .tu_ghep .jp {
+    color: tomato;
+    font-size: 14px;
+    font-weight: bold;
+}
+.ex_kanji_show .ex_kanji_show_item .back .tu_ghep .vn {
+}
+.jp_btn_arrow {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: block;
+    height: 50px;
+    position: absolute;
+    top: 45%;
+    width: 50px;
+}
+.jp_btn_left_arrow {
+    background-image: url("../images/jp_right_arrow.png");
+    right: 0;
+}
+.jp_btn_right_arrow {
+    background-image: url("../images/jp_left_arrow.png");
+    left: 0;
+}
+.jp_term_title_practice {
+    color: royalblue;
+    font-size: 23px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+}
+.ex_new_words {
+    min-height: 250px;
+    padding: 20px 0;
+}
+.ex_new_words p {
+}
+.ex_new_words p .audio_click {
+}
+.ex_new_words p span {
+    font-size: 15px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.ex_new_words img {
+    border: 1px solid #dcdcdc;
+    height: 120px;
+    max-width: 90%;
+    padding: 2px;
+    width: auto;
+}
+.jp_user_list {
+}
+.jp_user_list ul {
+    margin: 0;
+    padding: 0;
+}
+.jp_user_list li {
+    list-style: outside none none;
+}
+.jp_user_list li .user_detail {
+    border-bottom: 1px solid #dcdcdc;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 0 5px;
+}
+.jp_user_list li .user_detail img {
+    border-radius: 200px;
+    float: left;
+    height: 30px;
+    width: 30px;
+}
+.jp_user_list li .user_detail a {
+    float: left;
+    margin-left: 10px;
+    max-width: 80%;
+    min-width: 60%;
+    text-decoration: none;
+}
+.jp_user_list .jp_user_top10 {
+    background: wheat none repeat scroll 0 0;
+    display: block;
+    font-family: OPENSANS-REGULAR;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+.jp_user_list li .user_detail p {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    min-width: 80%;
+}
+.jp_user_list li .user_detail p span {
+    border: medium none;
+    color: tomato;
+    margin-left: 5px;
+    text-decoration: none;
+}
+.jp_user_list ul.jp_course_suggest {
+    display: block;
+    height: 260px;
+    position: relative;
+}
+.jp_user_list ul.jp_course_suggest li {
+    display: block;
+    height: 230px !important;
+    width: 100% !important;
+}
+.jp_user_list ul.jp_course_suggest .item_suggest {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+}
+.jp_user_list ul.jp_course_suggest .item_suggest a {
+    display: block;
+    float: none;
+    height: auto;
+    width: 100%;
+}
+.jp_user_list ul.jp_course_suggest .item_suggest img {
+    height: 180px;
+    margin-bottom: 10px;
+}
+.jp_user_list ul.jp_course_suggest .item_suggest span {
+    color: steelblue;
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 44px;
+}
+.jp_user_card {
+}
+.jp_user_card .card_title {
+    background: springgreen none repeat scroll 0 0;
+    border: medium none #dcdcdc;
+    border-radius: 3px;
+    color: cornsilk;
+    font-family: Roboto Condensed Regular;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+.jp_user_card .card_title span {
+}
+
+.kj_strokes {
+}
+.kj_strokes .itm_strocke {
+    border-top: 1px solid #dcdcdc;
+}
+.kj_strokes .itm_strocke h2 {
+    margin-bottom: 20px;
+}
+.kj_strokes .itm_strocke .itm_data {
+    padding-bottom: 20px;
+}
+.kj_strokes .itm_strocke .itm_data .item_kanji {
+    border-bottom: 1px solid #dcdcdc;
+    border-right: 1px solid #dcdcdc;
+    display: inline-block;
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    cursor: pointer;
+    float: left;
+}
+
+.kanji_tapvietkanji {
+    background-image: url("../images/tapviethantu.png");
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 100px;
+    margin-bottom: 10px;
+    width: 793px;
+    display: block;
+}
+
+.kanji_tapviet marquee {
+    background: #1c84c6 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    padding: 2px;
+    width: 100%;
+}
+.kanji_tapviet marquee a {
+    color: white;
+    margin-left: 20px;
+}
+.jp_kanji_draw span{
+    display: none;
+}
+#cach_viet_chu{
+    font-size: 30px;
+}
+
+#sample-btn{
+    display: none;
+}
+
+.box-authentication .error{
+    display: block;
+    width: 65%;
+    margin-top: 0px;
+    color: red;
+    text-align: right;
+}
+
+.box-authentication.jp2s input, .box-authentication.jp2s textarea {
+    width: 65%;
+}
